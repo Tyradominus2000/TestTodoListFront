@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     async function getTodoList() {
       try {
-        const response = await fetch("http://localhost:8000/getTodos");
+        const response = await fetch("https://test-back-end-todo-list-git-main-tyradominus2000.vercel.app/getTodos");
         if (response.ok) {
           const todos = await response.json();
           console.log(todos);

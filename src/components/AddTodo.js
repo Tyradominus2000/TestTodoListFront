@@ -12,7 +12,7 @@ export default function AddTodo({ addTodo }) {
   async function handleClick() {
     if (contentInput.length) {
       try {
-        const response = await fetch("http://localhost:8000/addTodo", {
+        const response = await fetch("https://test-back-end-todo-list-git-main-tyradominus2000.vercel.app/addTodo", {
           method: "POST",
           body: JSON.stringify({
             content: contentInput,
